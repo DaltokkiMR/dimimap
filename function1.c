@@ -61,25 +61,26 @@ int show_map(int a){
                     printf("잘못된 입력입니다\n");
             }
         case 2:
-        switch(b){
-            case 1:
-            case 2:
-                printf("-------------------------------------\n");
-                printf("                입구\n");
-                printf("\n");
-                printf("   멀티미디어실          반\n");
-                printf("\n");
-                printf("       계단                          반\n");
-                printf("       입구                                         음악실\n");
-                printf("                                     반\n");
-                printf(" 연구실\n");
-                printf("-------------------------------------\n");
-            case 3:
-            case 4:
-                printf("-------------------------------------\n");
-                printf("대강당\n");
-                printf("-------------------------------------\n");
-                break;
+            switch(b){
+                case 1:
+                case 2:
+                    printf("-------------------------------------\n");
+                    printf("                입구\n");
+                    printf("\n");
+                    printf("   멀티미디어실          반\n");
+                    printf("\n");
+                    printf("       계단                          반\n");
+                    printf("       입구                                         음악실\n");
+                    printf("                                     반\n");
+                    printf(" 연구실\n");
+                    printf("-------------------------------------\n");
+                    break;
+                case 3:
+                case 4:
+                    printf("-------------------------------------\n");
+                    printf("대강당\n");
+                    printf("-------------------------------------\n");
+                    break;
             default:
                 printf("잘못된 입력입니다\n");
             }
@@ -92,7 +93,7 @@ int show_map(int a){
                     break;
                 case 1:
                     printf("-------------------------------------\n");
-                    printf("축구장     잔디밭          스마트팜"\n);
+                    printf("축구장     잔디밭          스마트팜\n");
                     printf("-------------------------------------\n");
                     break;
                 default:
