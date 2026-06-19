@@ -17,7 +17,7 @@ void main_ui()
 {
     int userinput = 0;
 
-    printf("\n\n")
+    printf("\n\n");
     printf("---------------------------------------------------------------------------\n");
     printf("                               디미고 지도\n");
     printf("---------------------------------------------------------------------------\n");
@@ -33,22 +33,11 @@ void main_ui()
 
     printf("\n");
 
-    switch (userinput) {
-        case 1:
-        show_map_ui();
-        break;
-        case 2:
-        find_pos_ui();
-        break;
-        case 3:
-        find_teacher_ui();
-        break;
-        case 4:
-        find_path_ui();
-        break;
-        default:
-        printf("[Error] 1, 2, 3, 4중 하나를 입력하세요.");
-    }
+    if (userinput == 1) show_map_ui();
+    else if (userinput == 2) find_pos_ui();
+    else if (userinput == 3) find_teacher_ui();
+    else if (userinput == 4) find_path_ui();
+    else printf("[Error] 1, 2, 3, 4중 하나를 입력하세요.");
 }
 
 void show_map_ui()
