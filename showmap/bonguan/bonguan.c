@@ -1,3 +1,5 @@
+#include "bonguan.h"
+
 int show_bonguan_3(){
     printf("남학생  교복실 문서   302호 303호 304호   1-1반   미화원    남자        \n");
     printf("탈의실        보관실                             휴게공간  화장실      계단\n");
