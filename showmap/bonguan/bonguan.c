@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "bonguan.h"
 
 int show_bonguan_3(){

@@ -27,19 +27,19 @@ void find_teacher()
         printf("본관 1층 교장실\n");
         return;
     }
-    for(int i = 0; i < strlen(*main3); i++)
+    for(int i = 0; i < 101; i++)
         if(strcmp(str,main3[i]) == 0)
         {
             printf("본관 3층 교무실\n");
             return;
         }
-    for(int i = 0; i < strlen(*new1); i++)
+    for(int i = 0; i < 101; i++)
         if(strcmp(str,new1[i]) == 0)
         {
             printf("신관 1층 교무실\n");
             return;
         }
-    for(int i = 0; i < strlen(*main1); i++)
+    for(int i = 0; i < 101; i++)
         if(strcmp(str,main1[i]) == 0)
         {
             printf("본관 1층 교무실\n");

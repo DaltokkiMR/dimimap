@@ -6,7 +6,7 @@
 
 void main_ui();
 
-int main(int argc, char const *argv[])
+int main()
 {
     while (1) main_ui();
     return 0;
@@ -28,13 +28,15 @@ void main_ui()
     printf("매뉴 입력: ");
 
     scanf("%d", &userinput);
-    while (getchar() != '\0');
+    while (getchar() != '\n');
 
     printf("\n");
-
-    if (userinput == 1) show_map();
+    
+    if (userinput == 1) want_map();
+    /*
     else if (userinput == 2) find_pos();
     else if (userinput == 3) find_teacher();
     else if (userinput == 4) printf("준비중입니다");
     else printf("[Error] 1, 2, 3, 4중 하나를 입력하세요.");
+    */
 }

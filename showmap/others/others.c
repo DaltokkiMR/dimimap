@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "others.h"
 
 int show_gym_0(){
@@ -23,6 +24,7 @@ int sin_guan_1(){
     printf("                                                                매점 테라스\n");
     printf("     세미나실                        3학년부 교무실\n");
     printf("                 입구\n");
+    return 0;
 }
 int sin_guan_2(){
     printf("                시청각실\n");
@@ -37,6 +39,7 @@ int sin_guan_2(){
     printf("                                                            음악실\n"); 
     printf("     연구실                3-1반  3-3반              계단\n");
     printf("\n");
+    return 0;
 }
 int sin_guan_3(){
     printf("도서관\n");
@@ -45,6 +48,7 @@ int sin_guan_3(){
     printf("                                                            음악실\n"); 
     printf("                        이사장실   애니메이션컨텐츠  첨단영상            계단\n");
     printf("                                      제작실습실      제작실\n");
+    return 0;
 }
 int dorm_1(){
     printf("	     신발장      계단          입구\n");
@@ -55,6 +59,7 @@ int dorm_1(){
     printf("        	             신발장\n");
     printf("\n");
     printf("        	                       심자실\n");
+    return 0;
 }
 int dorm_2(){
     printf("  입구                계단\n");
@@ -65,6 +70,7 @@ int dorm_2(){
     printf("         샤워실\n");
     printf("\n");
     printf("        	            호실\n");
+    return 0;
 }
 int dorm_3(){
     printf("               휴게실       계단\n");
@@ -75,6 +81,7 @@ int dorm_3(){
     printf("        	    샤워실\n");
     printf("\n");
     printf("        	             호실\n");
+    return 0;
 }
 int dorm_4(){
     printf("               휴게실       계단\n");
@@ -85,6 +92,7 @@ int dorm_4(){
     printf("        	    샤워실\n");
     printf("\n");
     printf("        	             호실\n");
+    return 0;
 }
 int dorm_5(){
     printf("                       계단\n");
@@ -93,4 +101,5 @@ int dorm_5(){
     printf("\n");  
     printf("	                   호실\n");
     printf("        	    화장실\n");
+    return 0;
 }

@@ -1,7 +1,8 @@
-#include "bonguan/bonguan.h"
-#include "others/others.h"
 #include <stdio.h>
 #include <string.h>
+
+#include "bonguan/bonguan.h"
+#include "others/others.h"
 
 
 int show_map(int a){
@@ -112,7 +113,8 @@ int show_map(int a){
     }
     return 5;
 }
-int want_map(){
+
+void want_map(){
     int building = 0;
     printf("-----------------------\n");
     printf("      디미고 지도\n");
@@ -125,10 +127,8 @@ int want_map(){
     printf("-----------------------\n");
     printf("원하는 위치 입력:");
     scanf("%d",&building);
-    if (show_map != 0){
+    if (building != 0){
         show_map(building);
     }
-    else{
-        return 0;
-    }
+    return;
 }
