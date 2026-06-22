@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <string.h>
+#include "showmap/show_map.h"
+#include "findpos/find_pos.h"
 
 void main_ui();
-void show_map_ui();
-void find_pos();
-void find_teacher_ui();
-void find_path_ui();
 
 int main(int argc, char const *argv[])
 {
@@ -33,29 +31,9 @@ void main_ui()
 
     printf("\n");
 
-    if (userinput == 1) show_map_ui();
-    else if (userinput == 2) find_pos_ui();
-    else if (userinput == 3) find_teacher_ui();
-    else if (userinput == 4) find_path_ui();
+    if (userinput == 1) show_map();
+    else if (userinput == 2) find_pos();
+    else if (userinput == 3) find_teacher();
+    else if (userinput == 4) find_path();
     else printf("[Error] 1, 2, 3, 4중 하나를 입력하세요.");
-}
-
-void show_map_ui()
-{
-    return;
-}
-
-void find_pos()
-{
-    return;
-}
-
-void find_teacher_ui()
-{
-    return;
-}
-
-void find_path_ui()
-{
-    return;
 }

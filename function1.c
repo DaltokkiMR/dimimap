@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+
 int show_bonguan_3(){
     printf("남학생  교복실 문서   302호 303호 304호   1-1반   미화원    남자        \n");
     printf("탈의실        보관실                             휴게공간  화장실      계단\n");
@@ -139,7 +140,7 @@ int show_map(int a){
                     printf("It정보과학          3-6반\n");
                     printf("영재학급            3-4반\n");
                     printf("방송콘텐츠제작실습실\n");
-                    printf(" 멀티미디어실        3-2반\n");
+                    printf("멀티미디어실         3-2반\n");
                     printf("윈도우앱창작터실습실\n");
                     printf("      화장실         화장실\n");
                     printf("\n");
@@ -191,7 +192,7 @@ int show_map(int a){
                     printf("	                                       심야자습실\n");
                     printf("        	             신발장\n");
                     printf("\n");
-                    printf("        	                       심자실\n");
+                    printf("        	                       심야자습실\n");
                     printf("-------------------------------------\n");
                     break;
                 case 2:
