@@ -1,5 +1,5 @@
-#include "bonguan.h"
-#include "others.h"
+#include "bonguan/bonguan.h"
+#include "others/others.h"
 #include <stdio.h>
 #include <string.h>
 

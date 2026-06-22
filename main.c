@@ -8,7 +8,7 @@ void main_ui();
 
 int main(int argc, char const *argv[])
 {
-    while (1) main_ui;
+    while (1) main_ui();
     return 0;
 }
 
@@ -35,6 +35,6 @@ void main_ui()
     if (userinput == 1) show_map();
     else if (userinput == 2) find_pos();
     else if (userinput == 3) find_teacher();
-    else if (userinput == 4) find_path();
+    else if (userinput == 4) printf("준비중입니다");
     else printf("[Error] 1, 2, 3, 4중 하나를 입력하세요.");
 }

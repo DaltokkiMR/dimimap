@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include "find_pos.h"
 
 void find_pos()
 {
