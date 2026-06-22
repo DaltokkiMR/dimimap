@@ -2,6 +2,7 @@
 #include <string.h>
 #include "showmap/show_map.h"
 #include "findpos/find_pos.h"
+#include "findteacher/find_teacher.h"
 
 void main_ui();
 
