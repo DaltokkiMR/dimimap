@@ -1,1 +1,9 @@
+int sin_guan_1();
+int sin_guan_2();
+int sin_guan_3();
+int dorm_1();
+int dorm_2();
+int dorm_3();
+int dorm_4();
+int dorm_5();
 int show_gym_0();
