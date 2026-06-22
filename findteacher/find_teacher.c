@@ -8,6 +8,9 @@ void find_teacher()
     char main3[101][101] = {"이효현","행수쌤","이민주","제제쌤","전유원","김동영"};
     char new1[101][101] = {"임재훈","류명희","정재호","이호성","김재영","양재덕","박성수"};
     char principal[101] = "남승완";
+
+
+    
     printf("---------------------------------------------------------------------------\n");
     printf("                           위치 찾기\n");
     printf("---------------------------------------------------------------------------\n");
@@ -17,6 +20,9 @@ void find_teacher()
     printf("->");
     fgets(str, sizeof(str),stdin);
     str[strcspn(str,"\n")] = '\0';
+
+
+
     if(strcmp(principal,str) == 0) {
         printf("본관 1층 교장실\n");
         return;
@@ -39,11 +45,8 @@ void find_teacher()
             printf("본관 1층 교무실\n");
             return;
         }
-    return;
-}
 
-int main()
-{
-    find_teacher();
-    return 0;
+
+
+    return;
 }
