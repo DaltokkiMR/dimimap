@@ -3,7 +3,7 @@
 
 void main_ui();
 void show_map_ui();
-void find_pos_ui();
+void find_pos();
 void find_teacher_ui();
 void find_path_ui();
 
@@ -45,7 +45,7 @@ void show_map_ui()
     return;
 }
 
-void find_pos_ui()
+void find_pos()
 {
     return;
 }
