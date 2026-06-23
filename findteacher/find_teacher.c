@@ -17,7 +17,7 @@ void find_teacher()
     printf("찾고 싶은 교실, 교무실 등을 입력하세요.\n");
     printf("0을 입력하면 처음으로 돌아갑니다.\n");
     printf("---------------------------------------------------------------------------\n");
-    printf("->");
+    printf("선생님 입력: ");
     fgets(str, sizeof(str),stdin);
     str[strcspn(str,"\n")] = '\0';
 

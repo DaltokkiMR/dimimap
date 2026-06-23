@@ -58,8 +58,8 @@ int main_ui()
         {
             printf("[Error] 1, 2, 3, 4, 5중 하나를 입력하세요.");
         }
-        
-    printf("\n Enter키를 눌러 계속");
+
+    printf("> Enter키를 눌러 계속");
     while (getchar() != '\n');
     return 0;
 }
