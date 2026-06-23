@@ -113,5 +113,6 @@ void want_map(){
     if (building != 0){
         show_map(building);
     }
+    while (getchar() == '\0');
     return;
 }
