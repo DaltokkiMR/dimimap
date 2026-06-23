@@ -1,4 +1,4 @@
-CC = clang # windows면 gcc로 수정하고 실행하세요!
+CC = gcc # windows면 gcc로 수정하고 실행하세요!
 CFLAGS = -Wall -Wextra -std=c11
 
 TARGET = dimimap
