@@ -113,7 +113,7 @@ void find_pos()
     if (location_index == -1) printf("해당 장소를 찾을 수 없습니다.");
     else printf("%s은(는) %s %d층 %s에 있습니다.", ROOM[location_index][0], ROOM[location_index][1], ROOM[location_index][3][0], ROOM[location_index][2]);
 
-    while (getchar() != '\0');
+    while (getchar() != '\n');
 
     return;
 }

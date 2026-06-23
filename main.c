@@ -55,7 +55,7 @@ int main_ui()
         }
     else if (userinput == 5) 
         {
-            printf("디미맵을 종료합니다.");
+            printf("디미맵을 종료합니다.\n\n");
             return 1;
         }
     else 
