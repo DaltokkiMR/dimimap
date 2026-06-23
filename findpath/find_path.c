@@ -41,7 +41,6 @@ void input_st()
         else
             return;
     }
-    printf("%d\n",s);
 }
 
 void input_ds() 
@@ -70,7 +69,6 @@ void input_ds()
         else
             return;
     }
-    printf("%d\n",e);
     return;
 }
 
@@ -82,11 +80,11 @@ void pathfinder()
         dist[i] = INF;
 
     printf("---------------------------------------------------------------------------\n");
-    printf("                                  디미고 길안내\n");
+    printf("                               디미고 길안내\n");
     printf("---------------------------------------------------------------------------\n");
     printf("                   찾고 싶은 교실, 교무실 등을 입력하세요.\n");
-    printf("                     반 입력시 1-1형식으로 작성해주세요.\n");
-    printf("             신발장은 체육관신발장 또는 학봉관신발장 형식으로 작성해주세요.\n");
+    printf("                    반 입력시 1-1형식으로 작성해주세요.\n");
+    printf("         신발장은 체육관신발장 또는 학봉관신발장 형식으로 작성해주세요.\n");
     printf("                     0을 입력하면 처음으로 돌아갑니다.\n");
     printf("---------------------------------------------------------------------------\n");
     printf("현재 위치를 입력헤주세요.(최소할시 return을 입력해주세요.) -> ");
@@ -100,7 +98,6 @@ void pathfinder()
     if(e==0)
         return;
     dist[s] = 0;
-    printf("1.%d %d\n", s,e);
     int v;
     ss=s;
     ee=e;
@@ -133,8 +130,9 @@ void pathfinder()
 		i++;
 	}
 	for(int j = cnt; j > 1; j--)
-		printf("%s - > ",lc_list[k[j]]);
+		printf("%s ->\n",lc_list[k[j]]);
     printf("%s",lc_list[k[1]]);
+    printf("\n");
 }
 
 void create_map()
