@@ -1,0 +1,24 @@
+{
+    "code-runner.saveFileBeforeRun" : true,
+    "code-runner.runInTerminal": true,
+    "files.encoding": "utf8",
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    },
+
+    "terminal.integrated.defaultProfile.windows": "Command Prompt", // 윈도우 환경에서 터미널에 쓸 것 정하기
+    "terminal.integrated.defaultProfile.osx": "bash", // 맥 환경에서 터미널에 쓸 것 정하기
+
+    "terminal.integrated.profiles.windows": { // 윈도우 환경에서 한글 깨짐 방지
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": ["/K", "chcp 65001"], // 여기를 수정한거임
+            "icon": "terminal-cmd"
+        }
+    },
+
+    "editor.tabSize": 4,
+}
