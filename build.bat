@@ -1,1 +1,1 @@
-gcc main.c showmap/show_map.c showmap/bonguan/bonguan.c showmap/others/others.c findteacher/find_teacher.c findpos/find_pos.c -o dimimap.exe
+gcc main.c showmap/show_map.c showmap/bonguan/bonguan.c showmap/others/others.c findteacher/find_teacher.c findpos/find_pos.c findpath/find_path.c -o dimimap.exe
