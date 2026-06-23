@@ -36,22 +36,18 @@ int main_ui()
     if (userinput == 1) 
         {
             want_map();
-            return 0;
         }
     else if (userinput == 2) 
         {
             find_pos();
-            return 0;
         }
     else if (userinput == 3) 
         {
             find_teacher();
-            return 0;
         }
     else if (userinput == 4)
         {
             printf("준비중입니다");
-            return 0;
         }
     else if (userinput == 5) 
         {
@@ -61,6 +57,9 @@ int main_ui()
     else 
         {
             printf("[Error] 1, 2, 3, 4, 5중 하나를 입력하세요.");
-            return 0;
         }
+        
+    printf("\n Enter키를 눌러 계속");
+    while (getchar() != '\n');
+    return 0;
 }

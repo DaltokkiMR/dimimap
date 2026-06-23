@@ -32,7 +32,7 @@ void find_pos()
         {"1-1반", "본관", "급식실 계단 방향", {3}},
         {"1-2반", "본관", "비즈쿨실 계단 방향", {3}},
         {"1-3반", "본관", "급식실 계단 방향", {3}},
-        {"1-4빈", "본관", "급식실 계단 방향", {3}},
+        {"1-4반", "본관", "급식실 계단 방향", {3}},
         {"1-5반", "본관", "비즈쿨실 계단 방향", {3}},
         {"1-6반", "본관", "비즈쿨실 계단 방향", {3}},
 
@@ -111,9 +111,9 @@ void find_pos()
     }
 
     if (location_index == -1) printf("해당 장소를 찾을 수 없습니다.");
-    else printf("%s은(는) %s %d층 %s에 있습니다.", ROOM[location_index][0], ROOM[location_index][1], ROOM[location_index][3][0], ROOM[location_index][2]);
+    else printf("%s은(는) %s %d층 %s에 있습니다.\n", ROOM[location_index][0], ROOM[location_index][1], ROOM[location_index][3][0], ROOM[location_index][2]);
 
+    printf("\n Enter키를 눌러 계속");
     while (getchar() != '\n');
-
     return;
 }
