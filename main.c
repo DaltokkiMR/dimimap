@@ -3,6 +3,7 @@
 #include "showmap/show_map.h"
 #include "findpos/find_pos.h"
 #include "findteacher/find_teacher.h"
+#include "findpath/find_path.h"
 
 int main_ui();
 
@@ -47,7 +48,7 @@ int main_ui()
         }
     else if (userinput == 4)
         {
-            printf("준비중입니다");
+            find_path();
         }
     else if (userinput == 5) 
         {
