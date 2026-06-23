@@ -74,7 +74,7 @@ void input_ds()
     return;
 }
 
-void find_path()
+void pathfinder()
 {
     int ss, ee;
     int n,boool=0,minnn;
@@ -207,9 +207,9 @@ void create_map()
     d[100][106] = d[100][99] = 1;
 }
  
-int main()
+void find_path()
 {
     create_map();
-    find_path();
-    return 0;
+    pathfinder();
+    return;
 }
