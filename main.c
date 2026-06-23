@@ -57,7 +57,7 @@ int main_ui()
         }
     else 
         {
-            printf("[Error] 1, 2, 3, 4, 5중 하나를 입력하세요.");
+            printf("> 1, 2, 3, 4, 5중 하나를 입력하세요.\n");
         }
 
     printf("> Enter키를 눌러 계속");

@@ -92,7 +92,6 @@ void pathfinder()
     input_st();
     if(s==0)
         return;
-    printf("%d",s);
     printf("목적지를 입력해주세요.(최소할시 return을 입력해주세요.) -> ");
     input_ds();
     if(e==0)
