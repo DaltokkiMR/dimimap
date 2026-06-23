@@ -45,7 +45,7 @@ int sin_guan_3(){
     printf("도서관\n");
     printf("\n");
     printf("       계단             엘리베이터    데이터베이스프로그래밍실습실\n");
-    printf("                                                            음악실\n"); 
+    printf("\n"); 
     printf("                        이사장실   애니메이션컨텐츠  첨단영상            계단\n");
     printf("                                      제작실습실      제작실\n");
     return 0;

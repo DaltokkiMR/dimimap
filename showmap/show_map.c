@@ -90,9 +90,6 @@ int show_map(int a){
             }
             printf("-------------------------------------------------------------------------\n");
             break;
-        case 5:
-            return 0;
-            break;
         default:
             printf("잘못된 입력입니다\n");
     }
@@ -112,7 +109,7 @@ void want_map(){
     printf("---------------------------------------------------------------------------\n");
     printf("원하는 위치 입력:");
     scanf("%d",&building);
-    if (building != 0){
+    if (building != 5){
         show_map(building);
     }
     return;
