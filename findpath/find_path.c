@@ -19,7 +19,7 @@ void input_st()
 {
     char st[101], des[101];
     int boool = 0;
-    scanf("%s",&st);
+    fgets(st, sizeof(st), stdin);
     while(getchar()!='\n');
     if(strcmp("return",st)==0)
         return;
@@ -85,14 +85,14 @@ void pathfinder()
     printf("                   찾고 싶은 교실, 교무실 등을 입력하세요.\n");
     printf("                    반 입력시 1-1형식으로 작성해주세요.\n");
     printf("         신발장은 체육관신발장 또는 학봉관신발장 형식으로 작성해주세요.\n");
-    printf("                     0을 입력하면 처음으로 돌아갑니다.\n");
+    printf("                      최소할시 return을 입력해주세요.\n");
     printf("---------------------------------------------------------------------------\n");
-    printf("현재 위치를 입력헤주세요.(최소할시 return을 입력해주세요.) -> ");
+    printf("현재 위치 : ");
     
     input_st();
     if(s==0)
         return;
-    printf("목적지를 입력해주세요.(최소할시 return을 입력해주세요.) -> ");
+    printf("목적지 : ");
     input_ds();
     if(e==0)
         return;
@@ -143,7 +143,7 @@ void create_map()
     for(int i = 1; i <= 150;i++)
         for(int j = 1; j <= 150;j++)
             d[i][j] = INF;
-    d[1][11] = 1;
+    d[1][11] = 7;
     for(int i = 1; i < 18;i++)
         d[i][i + 1] = d[i + 1][i] = 1;
     for(int i = 19; i <35;i++)
