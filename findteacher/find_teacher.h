@@ -1,1 +1,1 @@
-void find_teacher();
+int find_teacher();
