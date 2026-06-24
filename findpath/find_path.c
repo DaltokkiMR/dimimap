@@ -19,14 +19,14 @@ void input_st()
 {
     char st[101]="";
     int boool = 0;
-    printf("현재 위치 입력 : ");
+    printf("현재 위치 입력: ");
     fgets(st ,sizeof(st), stdin);
     st[strcspn(st, "\n")] = '\0';
 
     for(int i = 0 ; i < strlen(st); i++)
         if(st[i] == '\n' || st[i] == ' ')
             st[i] = '\0';
-    if(strcmp("return",st)==0)
+    if(strcmp("0",st)==0)
         return;
     for(int i = 1; i < 107 && boool == 0;i++) {
         if(strcmp(st,lc_list[i])==0){
@@ -37,7 +37,7 @@ void input_st()
     if(boool == 0)
     {
         char tmp;
-        printf("잘못된 입력입니다. 다시 입력하시겠습니까?(y/n) -> ");
+        printf("잘못된 입력입니다. 다시 입력하시겠습니까?(y/n): ");
         scanf("%c",&tmp);
         if(tmp == 'y'){
             while(getchar()!='\n');
@@ -53,11 +53,11 @@ void input_ds()
 {
     int boool = 0;
     char st2[101]="";
-    printf("목적지 입력 : ");
+    printf("목적지 입력: ");
     fgets(st2 ,sizeof(st2), stdin);
     st2[strcspn(st2, "\n")] = '\0';
 
-    if(strcmp("return",st2)==0)
+    if(strcmp("0",st2)==0)
         return;
     for(int i = 0 ; i < strlen(st2); i++)
         if(st2[i] == '\n' || st2[i] == ' ')
@@ -71,7 +71,7 @@ void input_ds()
     if(boool == 0)
     {
         char tmp;
-        printf("잘못된 입력입니다. 다시 입력하시겠습니까?(y/n) -> ");
+        printf("잘못된 입력입니다. 다시 입력하시겠습니까?(y/n): ");
         scanf("%c",&tmp);
         if(tmp == 'y'){
             while(getchar()!='\n');
@@ -84,7 +84,7 @@ void input_ds()
     return;
 }
 
-void pathfinder()
+int pathfinder()
 {
     int ss, ee;
     int n,boool=0,minnn;
@@ -98,17 +98,15 @@ void pathfinder()
     printf("                    반 입력시 1-1반형식으로 작성해주세요.\n");
     printf("          본관 1층 교무실은 제1교무실으로 작성해주세요.\n");
     printf("         신발장은 체육관신발장 또는 학봉관신발장 형식으로 작성해주세요.\n");
-    printf("                      최소할시 return을 입력해주세요.\n");
+    printf("                      0을 입력하면 처음으로 돌아갑니다.\n");
     printf("---------------------------------------------------------------------------\n");
     
     input_st();
-
-    if(s==0)
-        return;
+    if(s==0) return 1;
 
     input_ds();
-    if(e==0)
-        return;
+    if(e==0) return 1;
+
     dist[s] = 0;
     int v;
     ss=s;
@@ -145,6 +143,8 @@ void pathfinder()
 		printf("%s ->\n",lc_list[k[j]]);
     printf("%s",lc_list[k[1]]);
     printf("\n");
+
+    return 0;
 }
 
 void create_map()
@@ -214,9 +214,8 @@ void create_map()
     d[101][108] = d[108][101] = 1;
 }
  
-void find_path()
+int find_path()
 {
     create_map();
-    pathfinder();
-    return;
+    return pathfinder();
 }

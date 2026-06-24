@@ -1,5 +1,5 @@
 void input_st();
 void input_ds();
-void pathfinder();
+int pathfinder();
 void create_map();
-void find_path();
+int find_path();

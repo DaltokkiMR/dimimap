@@ -49,7 +49,7 @@ int main_ui()
         }
     else if (userinput == 4)
         {
-            find_path();
+            returned = find_path();
         }
     else if (userinput == 5) 
         {

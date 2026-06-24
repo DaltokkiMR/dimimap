@@ -103,14 +103,14 @@ int want_map(){
     printf("    2. 신관\n");
     printf("    3. 체육관\n");
     printf("    4. 학봉관\n");
-    printf("    5. 돌아가기\n");
+    printf("    0. 돌아가기\n");
     printf("---------------------------------------------------------------------------\n");
     printf("위치 입력: ");
     scanf("%d",&building);
     while (getchar() == '\0');
 
-    if (building == 5) return 1; // Enter키로 돌아가기 표시 안 뜨도록 return 1
-    if (building != 5){
+    if (building == 0) return 1; // Enter키로 돌아가기 표시 안 뜨도록 return 1
+    if (building != 0){
         show_map(building);
         return 0; // 일반 종료
     }
