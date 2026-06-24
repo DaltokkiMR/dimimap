@@ -37,7 +37,7 @@ int main_ui()
     
     if (userinput == 1) 
         {
-            want_map();
+            returned = want_map();
         }
     else if (userinput == 2) 
         {
