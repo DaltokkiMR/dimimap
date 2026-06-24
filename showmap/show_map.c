@@ -94,7 +94,7 @@ int show_map(int a){
     return 5;
 }
 
-void want_map(){
+int want_map(){
     int building = 0;
     printf("---------------------------------------------------------------------------\n");
     printf("                               디미고 지도\n");
@@ -107,9 +107,11 @@ void want_map(){
     printf("---------------------------------------------------------------------------\n");
     printf("위치 입력: ");
     scanf("%d",&building);
+    while (getchar() == '\0');
+
+    if (building == 5) return 1; // Enter키로 돌아가기 표시 안 뜨도록 return 1
     if (building != 5){
         show_map(building);
+        return 0; // 일반 종료
     }
-    while (getchar() == '\0');
-    return;
 }
