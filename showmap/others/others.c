@@ -27,7 +27,7 @@ int sin_guan_1(){
     return 0;
 }
 int sin_guan_2(){
-    printf("                시청각실\n");
+    printf("          계단\n");
     printf("It정보과학          3-6반\n");
     printf("  영재학급          3-4반\n");
     printf("방송콘텐츠제작실습실\n");
@@ -42,7 +42,7 @@ int sin_guan_2(){
     return 0;
 }
 int sin_guan_3(){
-    printf("             도서관\n");
+    printf("             열람실\n");
     printf("\n");
     printf("       계단             엘리베이터    데이터베이스프로그래밍실습실\n");
     printf("\n"); 
