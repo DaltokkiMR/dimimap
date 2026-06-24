@@ -111,8 +111,8 @@ int want_map(){
     while (getchar() == '\0');
 
     if (building == 0) return 1; // Enter키로 돌아가기 표시 안 뜨도록 return 1
-    if (building != 0){
+    else if (building != 0){
         show_map(building);
-        return 0; // 일반 종료
     }
+    return 0; // 일반 종료
 }
