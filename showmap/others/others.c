@@ -6,7 +6,7 @@ int show_gym_0(){
     printf("\n");
     printf("                                                   스쿼시 장   \n");
     printf("                                                                          당구장\n");
-    printf("입구                     농구장                             거울 방\n");
+    printf("입구                     농구장                             요가/댄스실\n");
     printf("                                                     헬스장               탁구장\n");
     printf("                            의자\n");
     return 0;
@@ -42,7 +42,7 @@ int sin_guan_2(){
     return 0;
 }
 int sin_guan_3(){
-    printf("도서관\n");
+    printf("             도서관\n");
     printf("\n");
     printf("       계단             엘리베이터    데이터베이스프로그래밍실습실\n");
     printf("\n"); 
