@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void find_pos()
+int find_pos()
 {
     char ROOM[200][4][50] = {
         {"급식실", "본관", "학봉관 방향 계단", {0}},
@@ -105,7 +105,7 @@ void find_pos()
         fgets(location_input ,sizeof(location_input), stdin);
         location_input[strcspn(location_input, "\n")] = '\0';
     }
-    if (strcmp(location_input, "0") == 0) return; // 0 입력시 돌아가기
+    if (strcmp(location_input, "0") == 0) return 1; // 0 입력시 돌아가기, 1 return해서 enter키 계속 없애기.
     
     printf("\n");
     printf("-> ");
@@ -138,5 +138,5 @@ void find_pos()
     if (location_index == -1) printf("해당 장소를 찾을 수 없습니다.");
     else printf("%s은(는) %s %d층 %s에 있습니다.", ROOM[location_index][0], ROOM[location_index][1], ROOM[location_index][3][0], ROOM[location_index][2]);
     printf("\n");
-    return;
+    return 0;
 }

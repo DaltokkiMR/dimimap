@@ -1,1 +1,1 @@
-void find_pos();
+int find_pos();

@@ -16,6 +16,7 @@ int main()
 int main_ui()
 {
     int userinput = 0;
+    int returned = -1;
 
     printf("\n\n");
     printf("---------------------------------------------------------------------------\n");
@@ -40,11 +41,11 @@ int main_ui()
         }
     else if (userinput == 2) 
         {
-            find_pos();
+            returned = find_pos();
         }
     else if (userinput == 3) 
         {
-            find_teacher();
+            returned = find_teacher();
         }
     else if (userinput == 4)
         {
@@ -60,7 +61,15 @@ int main_ui()
             printf("> 1, 2, 3, 4, 5중 하나를 입력하세요.\n");
         }
 
-    printf("> Enter키를 눌러 계속");
-    while (getchar() != '\n');
+    if (returned == 0) // return이 1이면 Enter키 없이 스킵함.
+    {
+        printf("> Enter키를 눌러 계속");
+        while (getchar() != '\n');
+    }
+    else if (returned == -1)
+    {
+        printf("> 오류가 발생했습니다. 개발자에게 문의하세요.");
+
+    }
     return 0;
 }
