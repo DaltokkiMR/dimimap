@@ -59,6 +59,7 @@ int main_ui()
     else 
         {
             printf("> 1, 2, 3, 4, 5중 하나를 입력하세요.\n");
+            returned = 0;
         }
 
     if (returned == 0) // return이 1이면 Enter키 없이 스킵함.

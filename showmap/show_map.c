@@ -9,6 +9,7 @@ int show_map(int a){
     int floor = 0;
     printf("층 입력(지하는 0): ");
     scanf("%d",&floor);
+    while (getchar() == '\0');
     switch(a){
         case 1:
             printf("-------------------------------------------------------------------------\n");
