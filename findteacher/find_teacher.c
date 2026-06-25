@@ -55,6 +55,7 @@ int find_teacher() // 선생님 찾기
             locate = 4;
             break;
         }
+    printf("-> ");
     if (locate == 1) printf("본관 1층 교장실\n");
     else if (locate == 2) printf("본관 3층 교무실\n");
     else if (locate == 3) printf("신관 1층 교무실\n");
