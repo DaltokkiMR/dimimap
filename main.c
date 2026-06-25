@@ -30,27 +30,15 @@ int main_ui()
     printf("---------------------------------------------------------------------------\n");
     printf("매뉴 입력: ");
 
-    scanf("%d", &userinput);
+    scanf("%d", &userinput); // 메뉴 입력받기
     while (getchar() != '\n');
 
     printf("\n");
     
-    if (userinput == 1) 
-        {
-            returned = want_map();
-        }
-    else if (userinput == 2) 
-        {
-            returned = find_pos();
-        }
-    else if (userinput == 3) 
-        {
-            returned = find_teacher();
-        }
-    else if (userinput == 4)
-        {
-            returned = find_path();
-        }
+    if (userinput == 1) returned = want_map(); // 지도 표시 함수 실행
+    else if (userinput == 2) returned = find_pos(); // 위치 찾기 함수 실행
+    else if (userinput == 3) returned = find_teacher(); // 선생님 찾기 함수 실행
+    else if (userinput == 4)returned = find_path(); // 길 찾기 함수 실행
     else if (userinput == 5) 
         {
             printf("디미맵을 종료합니다.\n\n");
@@ -67,10 +55,6 @@ int main_ui()
         printf("> Enter키를 눌러 계속");
         while (getchar() != '\n');
     }
-    else if (returned == -1)
-    {
-        printf("> 오류가 발생했습니다. 개발자에게 문의하세요.");
-
-    }
+    else if (returned == -1)printf("> 오류가 발생했습니다. 개발자에게 문의하세요.");
     return 0;
 }

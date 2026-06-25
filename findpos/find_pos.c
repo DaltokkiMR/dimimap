@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int find_pos()
+int find_pos() // 위치 찾기 함수
 {
     char ROOM[200][4][50] = {
         {"급식실", "본관", "학봉관 방향 계단", {0}},

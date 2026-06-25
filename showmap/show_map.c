@@ -5,7 +5,7 @@
 #include "others/others.h"
 
 
-int show_map(int a){
+int show_map(int a){ // 건물은 argument로 입력받음(a) | 층만 함수 내부에서 추가로 입력받음
     int floor = 0;
     printf("층 입력(지하는 0): ");
     scanf("%d",&floor);

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "others.h"
 
+// 신관, 체육관, 학봉관 지도 표시
+
 int show_gym_0(){
     printf("                          신발장\n");
     printf("\n");
